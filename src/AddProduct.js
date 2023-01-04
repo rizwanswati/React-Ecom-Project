@@ -10,12 +10,12 @@ function AddProduct() {
 
 
 
-async function sendData() {
+    async function sendData() {
         let data = { name, price, description, file }
 
         let fileSelected = data.file[0];
-        
-        
+
+
         const formData = new FormData();
 
         formData.append('prod_image', fileSelected);
@@ -32,13 +32,13 @@ async function sendData() {
             //    'Content-Type': "multipart/form-data; boundary=formData",
             // },
             body: formData
-         
+
         }).then((response) => {
             console.log(response)
         }).catch((err) => console.error(err))
     }
 
-    const FileOnChangeHandler=(e)=> {
+    const FileOnChangeHandler = (e) => {
         setFile(e.target.files)
     }
 
