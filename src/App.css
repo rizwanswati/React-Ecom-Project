@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.nav-bar-wrapper a{
+  padding-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar-wrapper a:hover{
+  text-decoration: red;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
